@@ -1,5 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe User, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe User do
+  [:uid, :provider, :login, :name].each do |attr|
+    it { should respond_to attr }
+  end
 end
