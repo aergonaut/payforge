@@ -1,0 +1,21 @@
+{
+  "name": "payforge",
+  "version": "0.0.1",
+  "authors": [
+    "Chris Fung <aergonaut@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/aergonaut/payforge",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "card": "~0.0.5"
+  }
+}
