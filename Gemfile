@@ -30,7 +30,7 @@ gem 'spring',        group: :development
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -38,3 +38,25 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'haml-rails'
+
+gem 'omniauth-github'
+
+gem 'octokit'
+
+gem 'bootstrap-sass'
+
+gem 'rails_12factor'
+
+group :development, :test do
+  gem 'rspec-rails'
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+group :test do
+  gem 'factory_girl_rails'
+end
