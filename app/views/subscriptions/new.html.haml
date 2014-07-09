@@ -1,0 +1,22 @@
+.row
+  .col-sm-4.col-sm-offset-4.text-center
+    %h1 New Subscription
+    
+    .card-wrapper
+    
+= form_tag "#", id: "cc-form", class: "form-inline" do
+  .row
+    .col-sm-4.col-sm-offset-4
+      .form-group
+        = text_field_tag :number, "", placeholder: "Card Number", class: "form-control", autofocus: true
+      .form-group
+        = text_field_tag :name, "", placeholder: "Full Name", class: "form-control"
+  .row
+    .col-sm-4.col-sm-offset-4
+      .form-group
+        = text_field_tag :expiry, "", placeholder: "MM/YYYY", class: "form-control"
+      .form-group
+        = text_field_tag :cvc, "", class: "form-control"
+  .row
+    .col-sm-4.col-sm-offset-4
+      = submit_tag "Submit", class: "btn btn-primary"

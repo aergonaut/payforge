@@ -14,7 +14,20 @@
  */
 
 @import 'bootstrap';
+@import 'card/lib/css/card';
 
 body {
   padding-top: 40px;
+}
+
+.card-wrapper {
+  padding: 25px 0;
+}
+
+#cc-form {
+  padding-left: 8px;
+  
+  .row {
+    padding-bottom: 8px;
+  }
 }

@@ -24,5 +24,7 @@ module Payforge
       g.helper false
       g.assets false
     end
+    
+    config.assets.paths << Rails.root.join("vendor", "assets", "components")
   end
 end

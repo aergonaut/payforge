@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "sessions#new"
+  root "subscriptions#new"
   resources :sessions, only: [:new, :create, :destroy]
   
   get '/auth/:provider/callback' => 'sessions#create'
