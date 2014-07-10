@@ -1,6 +1,6 @@
 .row
   .col-sm-4.col-sm-offset-4.text-center
-    %h1 New Subscription
+    %h1 $5/mo.
     
     .card-wrapper
     
@@ -17,6 +17,10 @@
         = text_field_tag :expiry, "", placeholder: "MM/YYYY", class: "form-control"
       .form-group
         = text_field_tag :cvc, "", class: "form-control"
-  .row
+  .row.minecraft-username
+    .col-sm-4.col-sm-offset-4
+      .form-group
+        = text_field_tag :minecraft_username, "", placeholder: "Minecraft Username", class: "form-control"
+  .row.submit-controls
     .col-sm-4.col-sm-offset-4
       = submit_tag "Submit", class: "btn btn-primary"
